@@ -1,0 +1,127 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #24a4be;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: rgb(41, 141, 181);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cal {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: bold;
+}
+
+
+.bmi-status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.bmi-status div {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.underweight {
+    background-color: #ffc0cb;
+}
+
+.normal {
+    background-color: #28a745;
+}
+
+.overweight {
+    background-color: #ffa07a;
+}
+
+.obesity {
+    background-color: #dc3545;
+}
+
+.underweight,
+.normal,
+.overweight,
+.obesity {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 900px) {
+    .container {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .bmi-status {
+        position: relative;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .underweight,
+    .normal,
+    .overweight,
+    .obesity {
+        font-size: 14px;
+        padding: 5px;
+        border-radius: 0;
+    }
+}
